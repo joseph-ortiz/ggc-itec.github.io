@@ -1,5 +1,7 @@
 <html>
   <head>
+    <script type="text/javascript" src="http://code.jquery.com/jquery.min.js"></script>
+    <script type="text/javascript" src="http://getbootstrap.com/dist/js/bootstrap.js"></script>
     <link type="text/css" rel="stylesheet" href="http://getbootstrap.com/dist/css/bootstrap.css"/>
     <link type="text/css" rel="stylesheet" href="styles/main.css"/>
     <title>
@@ -8,23 +10,37 @@
   </head> 
  
   <body>
+
     <div class="container">
+    
+      <div class="tabbable">
+      
       <ul class="nav nav-tabs">
-        <li><a href="#">Projects</a></li>
-        <li><a href="#">Members</a></li>
-        <li><a href="#">Alumni</a></li>
-        <li class="active pull-right"><a href="#">ggc-itec</a></li>
+        <li><a href="#projects" data-toggle="tab">Projects</a></li>
+        <li><a href="#members" data-toggle="tab">Members</a></li>
+        <li><a href="#alumni" data-toggle="tab">Alumni</a></li>
+        <li class="active pull-right"><a href="#ggc-itec" data-toggle="tab">ggc-itec</a></li>
       </ul>
-    </div>
-    <!-- div class="container">
-      <div class="page-header">
-        <h1>ggc-itec</h1>
-        <p class="lead" style="color:#000;">Software Development at Georgia Gwinnett College</p>
-      </div -->
-      <!-- h3>Members</h3>
-      <h3>Alumni</h3>
-      <h3>Projects</h3>
-    </div -->   
+
+      <div class="tab-content">
+        <div class="tab-pane active" id="ggc-itec">
+          <p class="lead">Software Development at Georgia Gwinnett College</p>
+        </div>
+        <div class="tab-pane" id="projects">
+          <p> Projects Here </p>
+        </div>
+        <div class="tab-pane" id="members">
+          <p> Members Here </p>
+        </div>
+        <div class="tab-pane" id="alumni">
+          <p> Alumni Here </p>
+        </div>
+      </div>
+
+      </div> <!-- tabbable -->
+
+    </div> <!-- container -->
+
   </body> 
   
 </html>

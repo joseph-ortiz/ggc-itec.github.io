@@ -1,9 +1,14 @@
-.nav {
+.container {
   margin-top: 15px;
 }
 
 .nav a {
   color: #fff;
+}
+
+.tab-content {
+  margin-top: 15px;
+  color: #000;
 }
 
 body {
