@@ -1,3 +1,9 @@
+.lead {
+  font-family: 'Pacifico', cursive;
+  font-size: 27px;
+  font-weight: bold;  
+}
+
 .container {
   margin-top: 15px;
 }
@@ -21,8 +27,7 @@ h1,h3 {
   color: #fff;
 }
 
-a
-{
-	color: white;
-	list-style: none;
+a {
+  color: white;
+  list-style: none;
 }
