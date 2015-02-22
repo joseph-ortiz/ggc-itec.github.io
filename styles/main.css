@@ -20,3 +20,9 @@ body {
 h1,h3 {
   color: #fff;
 }
+
+a
+{
+	color: white;
+	list-style: none;
+}
