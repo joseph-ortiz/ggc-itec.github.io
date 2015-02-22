@@ -2,6 +2,7 @@
   <head>
     <script type="text/javascript" src="http://code.jquery.com/jquery.min.js"></script>
     <script type="text/javascript" src="http://getbootstrap.com/dist/js/bootstrap.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.pack.js"></script>
     <script>
       <!-- load html into tabs -->
       $(function() {
@@ -10,6 +11,7 @@
         $("#alumni").load("alumni.html");
       });
     </script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.css" type="text/css" media="screen" /> 
     <link type="text/css" rel="stylesheet" href="http://getbootstrap.com/dist/css/bootstrap.css"/>
     <link type="text/css" rel="stylesheet" href="styles/main.css"/>
     <link href='http://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' type='text/css'>
@@ -46,6 +48,24 @@
       </div> <!-- tabbable -->
 
     </div> <!-- container -->
+
+    <!-- use fancyBox to show external links in iframe -->
+    <script>
+      $(document).ready(function() {
+        $(".display-iframe").fancybox({
+          type:"iframe",
+          maxWidth:800,
+          maxHeight:600,
+          fitToView:false,
+          width:'75%',
+          height:'75%',
+          autoSize:false,
+          closeClick:false,
+          openEffect:'none',
+          closeEffect:'none'
+        });
+      });
+    </script>
 
   </body> 
   
