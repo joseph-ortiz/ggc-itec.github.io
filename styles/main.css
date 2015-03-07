@@ -31,3 +31,7 @@ a {
   color: white;
   list-style: none;
 }
+
+.thumb {
+  width: 150px;
+}
