@@ -49,12 +49,9 @@
 	var React = __webpack_require__(1);
 	var ReactDOM = __webpack_require__(158);
 	var Router = __webpack_require__(159).Router;
+	var Main = __webpack_require__(208);
 
-	ReactDOM.render(React.createElement(
-		'div',
-		null,
-		'Hello World'
-	), document.getElementById('app'));
+	ReactDOM.render(React.createElement(Main, null), document.getElementById('app'));
 
 /***/ },
 /* 1 */
@@ -24301,6 +24298,41 @@
 
 	exports['default'] = useBasename;
 	module.exports = exports['default'];
+
+/***/ },
+/* 208 */
+/***/ function(module, exports, __webpack_require__) {
+
+	"use strict";
+
+	var React = __webpack_require__(1);
+
+	var Main = React.createClass({
+		displayName: "Main",
+
+		render: function render() {
+			return React.createElement(
+				"div",
+				{ className: "main-container" },
+				React.createElement(
+					"nav",
+					{ className: "navbar navbar-default", role: "navigation" },
+					React.createElement(
+						"div",
+						{ className: "col-sm-7 col-sm-offset-2", style: { marginTop: 15 } },
+						"Navigation bar goes here"
+					)
+				),
+				React.createElement(
+					"div",
+					{ className: "container" },
+					this.props.children
+				)
+			);
+		}
+	});
+
+	module.exports = Main;
 
 /***/ }
 /******/ ]);
