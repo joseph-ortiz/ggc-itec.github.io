@@ -1,8 +1,9 @@
 var React = require('react');
 var ReactDOM = require('react-dom');
 var Router = require('react-router').Router;
+var Main = require('./Main');
 
 ReactDOM.render(
-	<div>Hello World</div>	,
+	<Main/>	,
 	document.getElementById('app')
 );
