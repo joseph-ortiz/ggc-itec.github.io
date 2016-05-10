@@ -1,84 +1,84 @@
 <html>
-  <head>
-    <script type="text/javascript" src="http://code.jquery.com/jquery.min.js"></script>
-    <script type="text/javascript" src="http://getbootstrap.com/dist/js/bootstrap.js"></script>
-    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.pack.js"></script>
-    <script>
-      <!-- load html into tabs -->
-      $(function() {
-        $("#projects").load("projects.html");
-        $("#members").load("members.html");
-        $("#alumni").load("alumni.html");
-        $("#pictures").load("pictures.html");
-        $("#discussion").load("discussions.html");
-      });
-    </script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.css" type="text/css" media="screen" /> 
-    <link type="text/css" rel="stylesheet" href="http://getbootstrap.com/dist/css/bootstrap.css"/>
-    <link type="text/css" rel="stylesheet" href="styles/main.css"/>
-    <link href='http://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' type='text/css'>
-    <title>
-      ggc-itec org website
-    </title>
-  </head> 
- 
-  <body>
+    <head>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.css" type="text/css" media="screen" /> 
+        <link type="text/css" rel="stylesheet" href="http://getbootstrap.com/dist/css/bootstrap.css"/>
+        <link type="text/css" rel="stylesheet" href="styles/main.css"/>
+        <link href='http://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' type='text/css'>
+            <title>
+                ggc-itec org website
+            </title>
+        </head>
 
-    <div class="container">
-    
-      <div class="tabbable">
-      
-      <ul class="nav nav-tabs">
-        <li><a href="#projects" data-toggle="tab">Projects</a></li>
-        <li><a href="#members" data-toggle="tab">Members</a></li>
-        <li><a href="#alumni" data-toggle="tab">Alumni</a></li>
-        <li><a href="#pictures" data-toggle="tab">Pictures</a></li>
-        <li><a href="#discussions" data-toggle="tab">Discussions</a></li>
-        <li class="active pull-right"><a href="#ggc-itec" data-toggle="tab">ggc-itec</a></li>
-      </ul>
+        <body>
+            <div class="container">
+                <div class="tabbable">
+                    <ul class="nav nav-tabs">
+                        <li><a class='nav-link' href="#projects" data-toggle="tab">Projects</a></li>
+                        <li><a class='nav-link' href="#members" data-toggle="tab">Members</a></li>
+                        <li><a class='nav-link' href="#alumni" data-toggle="tab">Alumni</a></li>
+                        <li><a class='nav-link' href="#pictures" data-toggle="tab">Pictures</a></li>
+                        <li><a class='nav-link' href="#discussions" data-toggle="tab">Discussions</a></li>
+                        <li class="active pull-right"><a href="#ggc-itec" data-toggle="tab">ggc-itec</a></li>
+                    </ul>
 
-      <div class="tab-content">
-        <div class="tab-pane active" id="ggc-itec">
-          <p class="lead">Software Development at Georgia Gwinnett College</p>
-        </div>
-        <div class="tab-pane" id="projects">
-        </div>
-        <div class="tab-pane" id="members">
-        </div>
-        <div class="tab-pane" id="alumni">
-        </div>
-        <div class="tab-pane" id="pictures">
-        </div>
-      </div>
+                    <div class="tab-content">
+                        <div class="tab-pane active" id="ggc-itec">
+                            <p class="lead">Software Development at Georgia Gwinnett College</p>
+                        </div>
+                        <div class="tab-pane" id="projects">
+                        </div>
+                        <div class="tab-pane" id="members">
+                        </div>
+                        <div class="tab-pane" id="alumni">
+                        </div>
+                        <div class="tab-pane" id="pictures">
+                        </div>
+                        <div class="tab-pane" id="discussion" role="tabpanel">
 
-      </div> <!-- tabbable -->
+                        </div>
+                    </div>
 
-    </div> <!-- container -->
+                </div> <!-- tabbable -->
 
-    <!-- use fancyBox to show external links in iframe -->
-    <script>
-      $(document).ready(function() {
-        $(".display-iframe").fancybox({
-          type:"iframe",
-          maxWidth:800,
-          maxHeight:600,
-          fitToView:false,
-          width:'75%',
-          height:'75%',
-          autoSize:false,
-          closeClick:false,
-          openEffect:'none',
-          closeEffect:'none'
-        });
+                <div id="disqus_thread"></div>
+            </div> <!-- container -->
 
-        $(".display-picture").fancybox({
-          openEffect:'none',
-          closeEffect:'none',
-          maxWidth:900
-        });
-      });
-    </script>
+            <script type="text/javascript" src="http://code.jquery.com/jquery.min.js"></script>
+            <script type="text/javascript" src="http://getbootstrap.com/dist/js/bootstrap.js"></script>
+            <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.pack.js"></script>
+            <!-- use fancyBox to show external links in iframe -->
+            <script>
+                $(document).ready(function() {
+                    $(".display-iframe").fancybox({
+                            type:"iframe",
+                            maxWidth:800,
+                            maxHeight:600,
+                            fitToView:false,
+                            width:'75%',
+                            height:'75%',
+                            autoSize:false,
+                            closeClick:false,
+                            openEffect:'none',
+                            closeEffect:'none'
+                    });
 
-  </body> 
-  
-</html>
+                    $(".display-picture").fancybox({
+                            openEffect:'none',
+                            closeEffect:'none',
+                            maxWidth:900
+                    });
+                });
+            </script>
+
+            <script>
+                <!-- load html into tabs -->
+                $(document).ready(function() {
+                    $("#projects").load("projects.html");
+                    $("#members").load("members.html");
+                    $("#alumni").load("alumni.html");
+                    $("#pictures").load("pictures.html");
+                    $("#discussion").load("discussions.html");
+                });
+            </script>
+        </body>
+    </html>
